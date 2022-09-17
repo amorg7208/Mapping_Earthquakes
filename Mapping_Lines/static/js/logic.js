@@ -12,20 +12,6 @@ let line = [
     [47.4502, -122.3088]
   ];
 
-<<<<<<< HEAD
-  // Create a polyline using the line coordinates and make the line red.
-L.polyline(line, {
-    color: "yellow"
-  }).addTo(map);
-// We create the tile layer that will be the background of our map.
-let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    accessToken: API_KEY
-});
-
-// Then we add our 'graymap' tile layer to the map.
-=======
 // Create a polyline using the line coordinates and make the line red.
 L.polyline(line, {
     color: "yellow"
@@ -38,6 +24,5 @@ let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-str
         accessToken: API_KEY
     });
 
-    // Then we add our 'graymap' tile layer to the map.
->>>>>>> 78bf34d7eaedda6cb5c63f0ad835fdf7f4ce1283
+// Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
